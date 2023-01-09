@@ -15,7 +15,6 @@ body {
 body:before {
   content: '';
   position: absolute;
-  background: url('./sudokuBackground.webp');
   background-size: cover;
   z-index: -1;
   height: 20%;
