@@ -15,6 +15,7 @@ body {
 body:before {
   content: '';
   position: absolute;
+  background: url('./sudokuBackground.webp');
   background-size: cover;
   z-index: -1;
   height: 20%;
@@ -138,8 +139,7 @@ a:active {
 
 @media (max-height: 800px) {
   #sing-in {
-    width: 450px;
+    width: 60%;
     height: 500px;
-    top: 15%;
   }
 }
