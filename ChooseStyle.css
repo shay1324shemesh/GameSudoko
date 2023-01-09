@@ -106,3 +106,8 @@ body:before {
   height: 70px;
   margin-bottom: 20px;
 }
+@media(max-height: 700px){
+  #wrapper{
+    width: 75%;
+  }
+}
