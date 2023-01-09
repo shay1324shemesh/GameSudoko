@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    /> -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script defer src="script.js"></script>
+    <title>Log in</title>
+  </head>
+  <body>
+    <div id="sing-in">
+      <div id="title">
+        <h1>Sudoku</h1>
+      </div>
+      <div id="body">
+        <div id="fileds">
+          <div class="filed margin">
+            <div>Username</div>
+            <div id="input-wrapper" class="margin">
+              <input
+                class="input border-radius"
+                id="username"
+                type="text"
+                placeholder="Enter username"
+                onfocus="removeError('username')"
+              />
+              <div id="username-error" class="error-message"></div>
+            </div>
+          </div>
+          <div class="filed margin">
+            <div>Password</div>
+            <div id="input-wrapper" class="margin">
+              <input
+                class="input border-radius"
+                id="password"
+                type="password"
+                placeholder="Enter password"
+                onfocus="removeError('password')"
+              />
+              <i class="ph-eye-bold" id="togglePassword"></i>
+              <div id="password-error" class="error-message"></div>
+            </div>
+          </div>
+          <div class="margin">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox">Remember me</label>
+          </div>
+          <div class="filed margin">
+            <button
+              onclick="checkForm()"
+              id="btn"
+              class="submit border-radius"
+              type="submit"
+            >
+              Enter
+            </button>
+          </div>
+        </div>
+        <div id="forget">
+          <label
+            >Forget <a href="#" onclick="showPassword()">password</a></label
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

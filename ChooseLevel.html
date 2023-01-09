@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ChooseStyle.css" />
+    <script src="ChooseScript.js"></script>
+    <title>Choose level</title>
+  </head>
+  <body>
+    <div id="background">
+      <div id="wrapper">
+        <h1 id="title">Welcome</h1>
+        <div id="choose-levels">
+          <h2>Level difficulty</h2>
+          <div id="btn-wrapper">
+            <div class="dropdown">
+              <button onclick="changeLevel(1)" class="btn">1</button>
+              <div class="dropdown-content">
+                <p>25% of cells are hidden</p>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button onclick="changeLevel(2)" class="btn">2</button>
+              <div class="dropdown-content">
+                <p>50% of cells are hidden</p>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button onclick="changeLevel(3)" class="btn">3</button>
+              <div class="dropdown-content">
+                <p>66.6% of cells are hidden</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button onclick="redirectLogin()" id="return" class="btn">
+          Back to log in
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  color: #333;
+}
+body:before {
+  content: '';
+  position: absolute;
+  background: url('../photos/sudokuBackground.webp');
+  background-size: cover;
+  z-index: -1;
+  height: 20%;
+  width: 20%;
+  transform: scale(5);
+  transform-origin: top left;
+  filter: blur(1px);
+}
+#sing-in {
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 500px;
+  height: 550px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 25%;
+  border: 1px #aaa solid;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#title {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#body {
+  width: 75%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+}
+#fileds {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.border-radius {
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.filed {
+  width: 100%;
+  height: 25%;
+}
+.margin {
+  margin: 10px 0px;
+}
+.input,
+.submit {
+  height: 40px;
+  width: 100%;
+}
+#body .input {
+  border: 1px rgb(73, 73, 73) solid;
+  padding: 0px 10px;
+}
+#input-wrapper {
+  position: relative;
+}
+i {
+  position: absolute;
+  top: 10px;
+  margin-left: -30px;
+  cursor: pointer;
+}
+.error-message {
+  color: rgba(203, 0, 0, 0.7);
+  font-size: 16px;
+  display: none;
+}
+#checkbox {
+  margin-left: 0px;
+}
+button {
+  border: 0px;
+  border-radius: 5px;
+  color: #fff;
+  width: 180px;
+  height: 50px;
+  background-color: rgba(151, 172, 71, 0.8);
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+button:hover {
+  background-color: rgb(151, 172, 71);
+  transition: 0.5s;
+}
+button:active {
+  background-color: rgb(188, 209, 103);
+  color: rgb(0, 31, 65);
+  transition: 0.1s;
+}
+#forget {
+  text-align: right;
+  font-size: 14px;
+  color: rgb(162, 163, 163);
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: rgb(70, 155, 255);
+}
+a:visited {
+  color: rgb(41, 139, 252);
+}
+a:hover {
+  color: rgb(37, 122, 219);
+}
+a:active {
+  color: rgb(70, 155, 255);
+}
+
+@media (max-height: 800px) {
+  #sing-in {
+    width: 450px;
+    height: 500px;
+    top: 15%;
+  }
+}

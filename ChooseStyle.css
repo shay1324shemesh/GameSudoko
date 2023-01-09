@@ -1,0 +1,108 @@
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  color: #333;
+}
+body:before {
+  content: '';
+  position: absolute;
+  background: url('../photos/sudokuBackground.webp');
+  background-size: cover;
+  z-index: -1;
+  height: 20%;
+  width: 20%;
+  transform: scale(5);
+  transform-origin: top left;
+  filter: blur(1px);
+}
+#background {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(11, 11, 11, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrapper {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px #aaa solid;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#choose-levels {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.dropdown {
+  /* width: 120px; */
+  position: relative;
+  display: inline-block;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+.dropdown-content {
+  width: 150%;
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  background-color: rgb(151, 172, 71);
+  margin-top: 5px;
+  left: -35px;
+  text-align: center;
+  padding: 0 10px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.btn {
+  border: 0px;
+  border-radius: 5px;
+  color: #fff;
+  width: 100px;
+  height: 70px;
+  background-color: rgba(151, 172, 71, 0.8);
+  font-size: 26px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.btn:hover {
+  background-color: rgb(151, 172, 71);
+  transition: 0.5s;
+}
+.btn:active {
+  background-color: rgb(188, 209, 103);
+  color: rgb(0, 31, 65);
+  transition: 0.1s;
+}
+
+#return {
+  width: 180px;
+  height: 70px;
+  margin-bottom: 20px;
+}
