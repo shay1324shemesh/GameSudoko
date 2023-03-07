@@ -180,11 +180,6 @@ body:before {
 .correct {
   background-color: rgba(123, 212, 142, 0.7);
 }
-input{
-  height: 100%;
-  width: 100%;
-  background: transparent;
-}
 @media (max-height: 1050px) {
   #game-container {
     margin-top: 100px;
