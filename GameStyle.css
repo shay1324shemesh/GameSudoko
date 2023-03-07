@@ -12,7 +12,10 @@ body {
   font-size: 20px;
   color: #333;
 }
-
+.gameInput{
+  height: 35px;
+  width: 35px;
+}
 body:before {
   content: '';
   position: absolute;
