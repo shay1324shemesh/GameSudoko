@@ -12,10 +12,6 @@ body {
   font-size: 20px;
   color: #333;
 }
- input{
-  height: 35px;
-  width: 35px;
-}
 body:before {
   content: '';
   position: absolute;
@@ -184,7 +180,10 @@ body:before {
 .correct {
   background-color: rgba(123, 212, 142, 0.7);
 }
-
+input{
+  height: 35px;
+  width: 35px;
+}
 @media (max-height: 1050px) {
   #game-container {
     margin-top: 100px;
