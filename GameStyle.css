@@ -181,8 +181,8 @@ body:before {
   background-color: rgba(123, 212, 142, 0.7);
 }
 input{
-  height: 35px;
-  width: 35px;
+  height: 40px;
+  width: 40px;
 }
 @media (max-height: 1050px) {
   #game-container {
