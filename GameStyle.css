@@ -182,6 +182,8 @@ body:before {
 }
 input{
   position: absolute;
+  height: 40px;
+  width: 40px;
 }
 @media (max-height: 1050px) {
   #game-container {
