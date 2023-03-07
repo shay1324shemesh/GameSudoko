@@ -12,7 +12,7 @@ body {
   font-size: 20px;
   color: #333;
 }
-.hidden,.cell input{
+ input{
   height: 35px;
   width: 35px;
 }
